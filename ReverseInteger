@@ -1,0 +1,24 @@
+Given a 32-bit signed integer, reverse digits of an integer.
+
+class Solution {
+    public int reverse(int x) {
+        boolean isNegative = false;
+        if (x < 0)
+        {
+            isBoolean = true;
+            x = -x;
+        }
+        int rev = 0;
+        while(x!=0)
+        {
+            rev = (rev * 10) + x % 10;
+            x = x / 10;
+        }
+        
+        if(isBoolean)
+        {
+            rev = - rev;
+        }
+        return rev;
+    }
+}
